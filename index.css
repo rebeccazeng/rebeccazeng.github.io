@@ -1,0 +1,120 @@
+body {
+  font-size: 2.3em;
+  font-family: sans-serif;
+  background-color: #151515;}
+
+
+#bigBox {
+  display: flex;
+  flex-direction: row;
+  margin: 2vw 0vw 1vw 0vw;
+  justify-content: center;
+
+}
+
+
+.heading:after {
+  background-color: #e7e7e7;
+  color: #151515;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  transition: 1s;
+  line-height:90%;
+  text-align: center;
+  padding: 0vw 1vw;
+
+}
+
+.heading:hover:after {
+  background-color: #151515;
+  color: #e7e7e7;
+}
+
+#hi:after {
+  content: "Hi, I'm Rebecca Zeng."
+}
+
+#hi:hover:after {
+  content:"It's nice to meet you!";
+}
+
+
+#projects_label:after {
+  content: "Projects";
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+}
+
+#projects_label {
+  width: 17vw;
+  margin: 0vw auto;
+}
+/*
+#projects_label:hover:after {
+  content:"These are ongoing.";
+}*/
+
+#bigBox2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#profpic {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  margin-left: 3vw;
+}
+
+#profpic_img {
+  width: 31vw;
+  height: 20vw;
+  margin-top: 3vw;
+
+}
+
+#aboutMe {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  margin-left: 4vw;
+  margin-top: 2vw;
+}
+
+#aboutMe {
+  font-size: 0.5em;
+  color: #e7e7e7;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 200%;
+  width: 55vw;
+}
+
+#bigBox3 {
+  display: flex;
+  flex-direction: row;
+}
+
+#pioneerImg {
+  flex-flow: row;
+  margin-top: 1.4vw;
+}
+
+#pioneerImgImg {
+  height: 20vw;
+}
+
+#pioneerText {
+  font-size: 0.5em;
+  color: #e7e7e7;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 200%;
+  width: 41vw;
+  flex-flow: row;
+  margin: 0.3vw 4vw;
+}
+
+#projects_label {
+  font-size: 1em;
+  color: #e7e7e7;
+  margin-bottom: 2vw;
+}
