@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1872">
-              <caret line="104" column="92" lean-forward="false" selection-start-line="104" selection-start-column="92" selection-end-line="104" selection-end-column="92" />
+            <state relative-caret-position="121">
+              <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -32,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resume.min.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="resume.min.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/theme/css/resume.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="336">
+              <caret line="26" column="333" lean-forward="false" selection-start-line="26" selection-start-column="333" selection-end-line="26" selection-end-column="339" />
               <folding />
             </state>
           </provider>
@@ -73,9 +73,10 @@
       <find>side</find>
       <find>july</find>
       <find>navbar</find>
-      <find>date</find>
       <find>text-md</find>
       <find>nav</find>
+      <find>date</find>
+      <find>abc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -535,18 +536,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/css/resume.min.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="121">
+          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/theme/css/resume.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
-          <caret line="104" column="92" lean-forward="false" selection-start-line="104" selection-start-column="92" selection-end-line="104" selection-end-column="92" />
+        <state relative-caret-position="336">
+          <caret line="26" column="333" lean-forward="false" selection-start-line="26" selection-start-column="333" selection-end-line="26" selection-end-column="339" />
           <folding />
         </state>
       </provider>
