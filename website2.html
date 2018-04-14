@@ -8,17 +8,17 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
+  <style>
   body {
       font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
+      line-height: 1.5;
       color: #f5f6f7;
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   #projects {padding: 2em 10em 2em 10em;}
   .bg-1 { 
-      background-color: #1abc9c; /* Green */
+      background-color: #a5ccea; /* Green */
       color: #ffffff;
   }
   .bg-2 { 
@@ -26,7 +26,7 @@
       color: #ffffff;
   }
   .bg-3 { 
-      background-color: #ffffff; /* White */
+      background-color: #a5ccea; /* White */
       color: #555555;
   }
   .bg-4 { 
@@ -50,13 +50,13 @@
       color: #1abc9c !important;
   }
   #profile_pic {padding: 2em 1em 1em 1em}
-  </style>
+
+</style>
+
 </head>
 <body>
 
 <!-- Navbar -->
-<!-- The scrollable area -->
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -66,23 +66,96 @@
   </ul>
 </nav>
 
-<!-- Moving animation -->
+<!-- Type animation -->
+
+<h1>
+  <div class="typewrite" data-period="2000" data-type='[ "Hi, I&#39;m Rebecca!", "I study computer science, and love to learn.", "I aspire to be a child at heart"]'>
+    <span class="wrap"></span>
+  </div>
+</h1>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+body {
+  background-color:#a5ccea;
+  text-align: center;
+  color:#fff;
+  padding-top:5em;
+}
+
+* { color:#fff; font-family:"Karla", sans-serif; text-decoration: none;}
+</style>
+<script>
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
 
 
 <!-- First Container -->
-<div id="top" class="container-fluid bg-1 text-center">
-  <!--<h3 class="margin">Hi, I'm Rebecca.</h3>-->
-  <img src="images/rebecca.jpg" id="profile_pic" class="img-responsive img-circle margin" style="display:inline;" alt="Rebecca" width="200" height="200">
-  <h3></h3>
+<div class="container-fluid">
+  <div id="projects" class="container-fluid bg-2 text-center">
+        <img src="images/rebecca.jpg" id="profile_pic" class="img-responsive img-circle margin" style="" align="left" alt="Rebecca" width="200" height="200"> 
+    <h3 class="margin">Who am I?</h3>
+<p align="left">It's nice to meet you! I'm currently studying computer science at the University of California, Berkeley. Some things I enjoy doing are: <a style="color:#a5ccea;" href="http://collegeprep.org/">working </a>to serve under-resourced/underrepresented students, learning new things, and <a style="color:#a5ccea;" href= "https://instagram.com/rebeccacodes">attempting </a> to create aesthetic study pictures.</p>
+  </div>
+
 </div>
 
-<!-- Second Container -->
-<div id="projects" class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-</div>
-
-<!-- Third Container (Grid) -->
+<!-- Second Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin">Currently exploring</h3><br>
   <div class="row">
